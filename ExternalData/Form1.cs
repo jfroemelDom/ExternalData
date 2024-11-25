@@ -21,6 +21,7 @@ namespace ExternalData
 
         private void btnViewStudents_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("btnViewStudents has been clicked");
             //This opens the sql connection using our 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {

@@ -38,7 +38,6 @@ namespace ExternalData
             AddStudentForm addStudentForm = new AddStudentForm();
             if (addStudentForm.ShowDialog() == DialogResult.OK)
             {
-                //Hi
                 Student student = new Student(addStudentForm.ID, addStudentForm.FirstName,
                     addStudentForm.LastName, addStudentForm.Major);
                 AddStudentToDb(student);

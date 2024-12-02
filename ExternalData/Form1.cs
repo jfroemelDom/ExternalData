@@ -48,6 +48,7 @@ namespace ExternalData
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                //Query data into my Student table in database
                 conn.Open();
                 string query = "INSERT INTO dbo.Student(Id, FirstName, LastName, Major) " +
                     "VALUES (@Id, @FirstName, @LastName, @Major)";

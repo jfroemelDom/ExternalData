@@ -38,6 +38,7 @@ namespace ExternalData
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(Major);
             this.DialogResult = DialogResult.OK;
         }
 
